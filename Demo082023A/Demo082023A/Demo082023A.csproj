@@ -11,16 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Assets\estilos.css" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Assets\estilos.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,12 +25,12 @@
     <Compile Update="GlobalStyles.xaml.cs">
       <DependentUpon>GlobalStyles.xaml</DependentUpon>
     </Compile>
-    <Compile Update="CascadingStyleSheets.xaml.cs">
-      <DependentUpon>CascadingStyleSheets.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CascadingStyleSheets.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="DinamicStyles.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -49,9 +41,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="GlobalStyles.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="CascadingStyleSheets.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="StyleInheritance.xaml">

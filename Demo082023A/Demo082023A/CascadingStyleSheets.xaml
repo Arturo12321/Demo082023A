@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CssStylesheet"
-             x:Class="Demo082023A.CascadingStyleSheets"
-             >
+             x:Class="Demo082023A.CascadingStyleSheets">
+
     <ContentPage.Resources>
-        <StyleSheet Source="/Assets/estilos.css" />
+        <StyleSheet Source="Assets/estilos.css" />
     </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Margin="20">
             <StackLayout Orientation="Vertical">
@@ -14,7 +14,7 @@
                 <Entry Placeholder="Your password"></Entry>
                 <Entry Placeholder="Your email" ></Entry>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">  
+            <StackLayout Orientation="Horizontal">
                 <CheckBox></CheckBox>
                 <Label Text="from another device"></Label>
             </StackLayout>
