@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo082023A.DinamicStyles">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="View">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+            <Style x:Key="blueSearchBarStyle" TargetType="SearchBar" BasedOn="{StaticResource baseStyle}">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="PlaceholderColor" Value="Blue" />
+            </Style>
+            <Style x:Key="redSearchBarStyle" TargetType="SearchBar">
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="PlaceholderColor" Value="Red" />
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button" BasedOn="{StaticResource baseStyle}">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+            <SearchBar Placeholder="Estas etiquetas" Style="{DynamicResource searchBarStyle}" />
+            <SearchBar Placeholder="son para demostrar" Style="{DynamicResource searchBarStyle}" />
+            <SearchBar Placeholder="el cambio de estilos." Style="{DynamicResource searchBarStyle}" />
+            <SearchBar Placeholder="pero esta no cambia." Style="{StaticResource blueSearchBarStyle}" />
+            <Button Text="Cambiar Estilo" Style="{StaticResource buttonStyle}" Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
