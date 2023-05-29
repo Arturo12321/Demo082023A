@@ -1,13 +1,13 @@
 ﻿^contentpage {
-    background-color: sandybrown
+    background-color: blue
 } 
 entry {
-    color: indigo;
+    color: white;
     font-style: oblique;
 }
 
 label {
-    color: darkslategray;
+    color: white;
     font-size: medium;
 }
 
@@ -23,4 +23,23 @@ label {
     padding: 16 31;
     text-decoration: none;
     text-shadow: 0 1 0 #2f6627;
+}
+#giveup {
+    background-color: #FF0000;
+    border-radius: 28;
+    border: 1 solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17;
+    padding: 16 31;
+    text-decoration: none;
+    text-shadow: 0 1 0 #2f6627;
+}
+
+#title {
+    color: white;
+    font-size: large;
+    text-align: center;
 }

@@ -10,17 +10,20 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Margin="20">
             <StackLayout Orientation="Vertical">
-                <Entry Placeholder="Your username"></Entry>
-                <Entry Placeholder="Your password"></Entry>
-                <Entry Placeholder="Your email" ></Entry>
+                <Label x:Name="title" Text="Formulario"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Entry Placeholder="Your Gmail"></Entry>
+                <Entry Placeholder="Your Name"></Entry>
+                <Entry Placeholder="Your password" ></Entry>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <CheckBox></CheckBox>
                 <Label Text="from another device"></Label>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Button Text="Give-Up"></Button>
-                <Button x:Name="signup" Text="Sign-Up"></Button>
+                <Button x:Name="giveup" Text="Cancelar"></Button>
+                <Button x:Name="signup" Text="Registrarse"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
