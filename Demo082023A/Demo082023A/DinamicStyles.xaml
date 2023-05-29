@@ -7,27 +7,27 @@
             <Style x:Key="baseStyle" TargetType="View">
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             </Style>
-            <Style x:Key="blueSearchBarStyle" TargetType="SearchBar" BasedOn="{StaticResource baseStyle}">
+            <Style x:Key="redSearchBarStyle" TargetType="SearchBar" BasedOn="{StaticResource baseStyle}">
                 <Setter Property="FontAttributes" Value="Italic" />
-                <Setter Property="PlaceholderColor" Value="Blue" />
-            </Style>
-            <Style x:Key="redSearchBarStyle" TargetType="SearchBar">
-                <Setter Property="FontAttributes" Value="None" />
                 <Setter Property="PlaceholderColor" Value="Red" />
+            </Style>
+            <Style x:Key="limeSearchBarStyle" TargetType="SearchBar">
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="PlaceholderColor" Value="Lime" />
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button" BasedOn="{StaticResource baseStyle}">
                 <Setter Property="FontSize" Value="Large" />
-                <Setter Property="BackgroundColor" Value="Black" />
-                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="Blue" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <SearchBar Placeholder="Estas etiquetas" Style="{DynamicResource searchBarStyle}" />
-            <SearchBar Placeholder="son para demostrar" Style="{DynamicResource searchBarStyle}" />
-            <SearchBar Placeholder="el cambio de estilos." Style="{DynamicResource searchBarStyle}" />
-            <SearchBar Placeholder="pero esta no cambia." Style="{StaticResource blueSearchBarStyle}" />
+            <SearchBar Placeholder="Soy Estudiante del C24B" Style="{DynamicResource searchBarStyle}" />
+            <SearchBar Placeholder="Mi nombre es:" Style="{DynamicResource searchBarStyle}" />
+            <SearchBar Placeholder="Mia Fernandez Tarrillo" Style="{DynamicResource searchBarStyle}" />
+            <SearchBar Placeholder="Por favor, no copiar copiar" Style="{StaticResource redSearchBarStyle}" />
             <Button Text="Cambiar Estilo" Style="{StaticResource buttonStyle}" Clicked="OnButtonClicked" />
         </StackLayout>
     </ContentPage.Content>

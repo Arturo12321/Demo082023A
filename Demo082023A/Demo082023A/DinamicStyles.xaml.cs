@@ -17,18 +17,18 @@ namespace Demo082023A
         {
 
             InitializeComponent();
-            Resources["searchBarStyle"] = Resources["blueSearchBarStyle"];
+            Resources["searchBarStyle"] = Resources["redSearchBarStyle"];
         }
         void OnButtonClicked(object sender, EventArgs e)
         {
             if (originalStyle)
             {
-                Resources["searchBarStyle"] = Resources["redSearchBarStyle"];
+                Resources["searchBarStyle"] = Resources["limeSearchBarStyle"];
                 originalStyle = false;
             }
             else
             {
-                Resources["searchBarStyle"] = Resources["blueSearchBarStyle"];
+                Resources["searchBarStyle"] = Resources["redSearchBarStyle"];
                 originalStyle = true;
             }
         }

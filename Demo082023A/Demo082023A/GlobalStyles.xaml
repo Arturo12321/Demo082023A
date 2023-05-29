@@ -4,13 +4,13 @@
              x:Class="Demo082023A.GlobalStyles">
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <Button Text="Estos botones" 
+            <Button Text="Soy Estudiante del C24B" 
                     Style="{StaticResource buttonStyle}" />
-            <Button Text="son de" 
+            <Button Text="Mi nombre es:" 
                     Style="{StaticResource buttonStyle}" />
-            <Button Text="Valerio Arturo Manrique Falcon" 
+            <Button Text="Mia Fernandez Tarrillo" 
                     Style="{StaticResource buttonStyle}" />
-            <Button Text="Abstenerse de copiar." 
+            <Button Text="Por favor, no copiar copiar." 
                     Style="{StaticResource buttonStyle}" />
         </StackLayout>
     </ContentPage.Content>

@@ -7,19 +7,19 @@
             <Style TargetType="Entry">
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="Red" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="TextColor" Value="White" />
+                <Setter Property="TextColor" Value="Black" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <Entry Text="Estas son las" />
-            <Entry Text="etiquetas de"/>
-            <Entry Text="Valerio Arturo Manrique Falcon" />
-            <Entry Text="Por favor, abstenerse a copiar." 
-                   BackgroundColor="Red" TextColor="Orange" />
+            <Entry Text="Soy Estudiante del C24B" />
+            <Entry Text="Mi nombre es:"/>
+            <Entry Text="Mia Fernandez Tarrillo" />
+            <Entry Text="Por favor, no copiar copiar." 
+                   BackgroundColor="Purple" TextColor="LightGreen" />
            
         </StackLayout>
     </ContentPage.Content>

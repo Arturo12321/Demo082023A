@@ -10,7 +10,7 @@
                 <Setter Property="VerticalOptions"
                         Value="CenterAndExpand" />
                 <Setter Property="FontSize" Value="Large" />
-                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="TextColor" Value="Black" />
             </Style>
             <Style x:Key="labelGreenStyle" TargetType="Label">
                 <Setter Property="HorizontalOptions"
@@ -18,7 +18,7 @@
                 <Setter Property="VerticalOptions"
                         Value="CenterAndExpand" />
                 <Setter Property="FontSize" Value="Large" />
-                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="TextColor" Value="Purple" />
             </Style>
             <Style x:Key="labelBlueStyle" TargetType="Label">
                 <Setter Property="HorizontalOptions"
@@ -26,21 +26,21 @@
                 <Setter Property="VerticalOptions"
                         Value="CenterAndExpand" />
                 <Setter Property="FontSize" Value="Large" />
-                <Setter Property="TextColor" Value="Blue" />
+                <Setter Property="TextColor" Value="Brown" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <Label Text="Estas son las"
+            <Label Text="Soy Estudiante del C24B"
                    Style="{StaticResource labelRedStyle}" />
-            <Label Text="etiquetas de"
+            <Label Text="Mi nombre es:"
                    Style="{StaticResource labelGreenStyle}" />
-            <Label Text="Valerio Arturo Manrique Falcon"
+            <Label Text="Mia Fernandez Tarrillo"
                    Style="{StaticResource labelBlueStyle}" />
-            <Label Text="Por favor, abstenerse a copiar."
+            <Label Text="Por favor, no copiar copiar."
                    Style="{StaticResource labelBlueStyle}"
-                   TextColor="Black" />
+                   TextColor="Red" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

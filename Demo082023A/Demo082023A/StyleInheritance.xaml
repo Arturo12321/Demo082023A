@@ -12,15 +12,16 @@
             </Style>
             <Style x:Key="labelStyle" TargetType="Label"
                    BasedOn="{StaticResource baseStyle}">
-                <Setter Property="FontAttributes" Value="Italic" />
-                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="Black" />
                 <Setter Property="FontSize" Value="30" />
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button"
                    BasedOn="{StaticResource baseStyle}">
                 <Setter Property="BorderColor" Value="Lime" />
+                <Setter Property="BorderWidth" Value="5" />
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="Blue" />
                 <Setter Property="FontSize" Value="25" />
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
@@ -28,13 +29,13 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <Label Text="Valerio Arturo"
+            <Label Text="Soy Estudiante del C24B"
                    Style="{StaticResource labelStyle}" />
-            <Label Text="Manrique Falcon"
+            <Label Text="Mi nombre es:"
                    Style="{StaticResource labelStyle}" />
-            <Label Text="Quinto Semestre"
+            <Label Text="Mia Fernandez Tarrillo"
                    Style="{StaticResource labelStyle}" />
-            <Button Text="2023-1"
+            <Button Text="Por favor, no copiar copiar."
                     Style="{StaticResource buttonStyle}" />
         </StackLayout>
     </ContentPage.Content>
